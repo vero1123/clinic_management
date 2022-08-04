@@ -1,0 +1,24 @@
+<odoo>
+<data>
+
+
+
+         <!--  "action" appointment report_action-->
+        <record model="ir.actions.report" id="appointment_reports_action">
+            <field name="name">patient appointment report</field>
+            <field name="model">patient.appointment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">clinic_management.patientappointment_report_detail</field>
+            <field name="report_file">clinic_management.patientappointment_report_detail</field>
+            <field name="binding_model_id" ref="clinic_management.model_patient_appointment"/>
+            <field name="binding_type" >report</field>
+        </record>
+
+
+
+
+
+
+
+</data>
+</odoo>

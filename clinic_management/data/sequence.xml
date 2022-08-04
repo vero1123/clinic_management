@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="sequence_patient_appointment" model="ir.sequence">
+        <field name="name">patient.appointment</field>
+        <field name="code">patient.appointment</field>
+        <field name="active">True</field>
+        <field name="prefix">SR/</field>
+        <field name="padding">4</field>
+        <field name="company_id" eval="False"/>
+    </record>
+</odoo>
+
+

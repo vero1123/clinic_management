@@ -1,0 +1,33 @@
+<odoo>
+    <data>
+        <record model="res.groups" id="clinical_users_groups">
+        <field name="name">clinical user</field>
+
+       </record>
+
+         <record model="res.groups" id="clinical_admin_groups">
+        <field name="name">clinical admin</field>
+
+       </record>
+
+        <record model="res.groups" id="clinical_doctor_groups">
+        <field name="name">clinical doctor</field>
+
+       </record>
+         <record model="ir.rule" id="clinical_doctor_groups">
+            <field name="name">see only confirm appointment</field>
+            <field name="model_id" ref="model_patient_appointment"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[ ('state', '=', 'confirm'),
+                                        ]
+            </field>
+        </record>
+
+
+
+
+
+
+
+    </data>
+</odoo>
